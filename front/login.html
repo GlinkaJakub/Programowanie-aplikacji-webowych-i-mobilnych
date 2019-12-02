@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <div id="loginform">
+        <form action="#" method="post">
+            <div class="container">
+
+                <h1>Login</h1>
+                <hr>
+
+                <label><b>Login:</b></label>
+                <input type="text" name="login" id="login">
+                <p id="demo"></p>
+
+                <p>
+                    <label><b>Password:</b></label>
+                    <input type="password" name="password" id="password"> <br>
+                    <span id="passwordspan">Enter password must be longer than 7 characters</span>
+                </p>
+
+                <input type="button" class="loginbtn" id="submit" value="Submit" name="submit"/>
+
+                <form action="http://localhost:63342/front/register.html">
+                    <button type="button" class="registerbtn" id="href-register-btn" onclick="window.location.href = 'http://localhost:63343/front/register.html';">
+                    Zarejestruj
+                    </button>
+                </form>
+            </div>
+        </form>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

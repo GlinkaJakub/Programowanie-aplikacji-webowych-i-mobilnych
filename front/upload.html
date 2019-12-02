@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+<div id="upload">
+    <form action="#">
+        <div class="container">
+            <h1>Upload file</h1>
+            <hr>
+            <label><b>Choose file</b></label>
+            <input type="hidden" id="user_id" value="75" />
+            <input type="file" name="file" id="file" accept="application/pdf" multiple />
+            <hr>
+<!--            <button class="loginbtn" type="submit" name="sendFile" id="sendFile">Send file</button>-->
+            <button class="loginbtn" name="submitbtn" id="submitbtn">Send file</button>
+        </div>
+    </form>
+    <div id="output">
+
+    </div>
+
+    <form action="http://localhost:63343/front/login.html">
+        <button type="button" class="loginbtn" id="loginbutton" onclick="window.location.href = 'http://localhost:63343/front/main.html';">
+            Menu
+        </button>
+</form>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="up.js"></script>
+</body>
+</html>

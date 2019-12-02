@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="main">
+    <div class="container">
+        <h1>Main menu</h1>
+
+        <form action="http://localhost:63342/front/upload.html">
+            <button type="button" class="loginbtn" id="uploadbtn" onclick="window.location.href = 'http://localhost:63343/front/upload.html';">
+                Upload file
+            </button>
+        </form>
+
+        <form action="http://localhost:63342/front/download.html">
+            <button type="button" class="loginbtn" id="downloadbtn" onclick="window.location.href = 'http://localhost:63343/front/download.html';">
+                Download file
+            </button>
+        </form>
+
+        <form action="http://localhost:63342/front/login.html">
+            <button type="button" class="loginbtn" id="logoutbtn" onclick="logout()">
+                Logout
+            </button>
+        </form>
+    </div>
+</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Pdf Manager</title>
+</head>
+<body>
+    <div id="pdfManager">
+        <form action="#" method="post">
+            <div class="containerPdf">
+                <h1>Pdf Manager</h1>
+                <hr>
+                <label><b>Upload file</b></label>
+                <input type="file" name="file" id="file">
+                <hr>
+                <label><b>Download file</b></label>
+                <table>
+                    <tr>
+                        <td class="td1"><h2>File</h2></td>
+                        <td class="td2"><h2>Options</h2></td>
+                    </tr>
+                    <tr>
+                        <td>jakis_plik.pdf</td>
+                        <td>
+                            <input type="button" class="download" id="download" value="Download">
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </form>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
